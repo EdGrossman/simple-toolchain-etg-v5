@@ -1,15 +1,18 @@
 ---
 declared-services:
-  my-conversation-service:
+  Conversation-tutoria1-etg:
     label: conversation
     plan: free
 applications:
-- name: conversation-simple
+- name: simple-toolchain-etg-v5
   command: npm start
   path: .
   memory: 256M
   instances: 1
   services:
-  - my-conversation-service
+  - Conversation-tutoria1-etg
   env:
     NPM_CONFIG_PRODUCTION: false
+    WORKSPACE_ID: 91b3ef1b-a710-4a58-8f50-ff895e0d23a0
+    CONVERSATION_USERNAME: 2973e1bb-e31e-4854-8914-74a8d9ffa536
+    CONVERSATION_PASSWORD: iZxLq4S3PpFQ
